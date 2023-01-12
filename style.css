@@ -91,3 +91,30 @@ color: var(--main-color);
     cursor: pointer;
     display: none;
 }
+
+
+
+/* media queries */
+@media (max-width: 991px)
+{
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    header {
+        left: -120%;
+    }
+
+    header.active {
+        left: 0%;
+    }
+}
+
