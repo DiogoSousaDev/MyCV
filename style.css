@@ -126,23 +126,33 @@ header .follow a:hover {
 }
 
 .experience .box-container .box .content {
+    position: relative;
     background-color: #fff;
-    padding: 1.5rem;
+    padding:  2.5rem 1.5rem ;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
 .experience .box-container .box .content span {
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     background-color: var(--main-color);
     border-radius: 50rem;
-    padding: .4rem 1rem
+    padding: .4rem 1rem;
 }
 
 .experience .box-container .box .content h3 {
-    font-size: 2.5rem;
-    padding: .5rem 0;
+    font-size: 2rem;
+    padding: 1.2rem 0;
+    color: #111;
+}
+
+.experience .box-container .box .content .company {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    font-size: 1.1rem;
     color: #111;
 }
 
