@@ -73,14 +73,14 @@ header .navbar a:hover {
     color: var(--main-color);
 }
 
-header .follow a{
+header .follow a {
     font-size: 2.5rem;
     color: #fff;
     margin: 0 .7rem;
 }
 
-header .follow a:hover{
-color: var(--main-color);
+header .follow a:hover {
+    color: var(--main-color);
 }
 
 
@@ -117,7 +117,8 @@ color: var(--main-color);
 .experience .box-container .box::before {
     content: '';
     position: absolute;
-    top: 0; left: -1rem;
+    top: 0;
+    left: -1rem;
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -153,8 +154,7 @@ color: var(--main-color);
 
 
 /* media queries */
-@media (max-width: 991px)
-{
+@media (max-width: 991px) {
     html {
         font-size: 55%;
     }
@@ -177,14 +177,18 @@ color: var(--main-color);
 }
 
 /* media queries */
-@media (max-width: 450px)
-{
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
 
     header {
         width: 100%;
+    }
+
+    .cursor-1,
+    .cursor-2 {
+        display: none;
     }
 
     .experience .box-container .box {
@@ -258,46 +262,46 @@ color: var(--main-color);
     text-transform: uppercase;
 }
 
-.home .content h3 span{
+.home .content h3 span {
     color: var(--main-color);
     text-transform: uppercase;
 }
 
-.content .info{
+.content .info {
     font-size: 2.5rem;
     color: #111;
     padding: .5rem 0;
 }
 
-.content .text{
+.content .text {
     font-size: 1.7rem;
     color: #666;
     padding: .5rem 0;
 }
 
-.btn{
-   display: inline-block;
-   margin-top: 1rem;
-   padding: .8rem 3rem;
-   background-color: var(--main-color);
-   color: #fff;
-   font-size: 1.7rem;
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.7rem;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #111;
     letter-spacing: .1rem;
     cursor: none;
- }
+}
 
- .heading {
+.heading {
     font-size: 4rem;
     padding-bottom: 1rem;
     color: #111;
     text-transform: uppercase;
- }
+}
 
- .heading span{
+.heading span {
     color: var(--main-color);
     text-transform: uppercase;
- }
+}
