@@ -12,13 +12,19 @@
 
 <body>
 
+    <!-- custmo cursors -->
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+
     <div id="menu-bars" class="fa-solid fa-bars"></div>
+
+    <!-- header section starts -->
 
     <header>
         <a href="#" class="logo"><span>Diogo</span> Sousa </a>
 
         <nav class="navbar">
-            <a href="#home">EXPERIÊNCIA</a>
+            <a href="#experience">EXPERIÊNCIA</a>
             <a href="#home">FORMAÇÃO</a>
             <a href="#home">COMPETÊNCIAS</a>
             <a href="#home">PROJETOS</a>
@@ -30,6 +36,90 @@
         </div>
 
     </header>
+
+    <!-- header section ends -->
+    
+
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span class="hi"> Olá... </span>
+            <h3>O meu nome é <span> Diogo Sousa </span> </h3>
+            <p class="info">Programador back-end</p>
+            <p class="text">rem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lacus finibus, pellentesque lectus eu, ullamcorper ipsum. Maecenas libero orci, hendrerit ac est vel, tempus mollis turpis. Nam aliquet tristique tortor eget pellentesque. Aliquam vestibulum ligula sit amet pharetra tristique. Vivamus nec felis nec eros ornare ultricies ut vel nunc. Fusce non imperdiet risus.</p>
+            <a href="#sobre" class="btn">Sobre mim</a>
+        </div>
+
+        <div class="image">
+            <img src="/img/developer.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- experience section ends -->
+
+    <section class="experience" id="experience">
+
+        <h1 class="heading"> minha <span> Experiência </span> </h1>
+
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="content">
+                    <span>2015 - 2016</span>
+                    <h3>front-end development</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span>2016 - 2017</span>
+                    <h3>front-end development</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span>2017 - 2018</span>
+                    <h3>front-end development</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span>2018 - 2019</span>
+                    <h3>front-end development</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span>2020 - 2021</span>
+                    <h3>front-end development</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="content">
+                    <span>2020 - 2021</span>
+                    <h3>front-end development</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- experience section ends -->
 
 
     <script>
@@ -43,8 +133,32 @@
 
         window.onscroll = () => {
             menu.classList.remove('fa-xmark')
-            header.classList.toggle('active')
+            header.classList.remove('active')
         }
+
+        let cursor1 = document.querySelector('.cursor-1');
+        let cursor2 = document.querySelector('.cursor-2');
+
+        window.onmousemove = (e) => {
+            cursor1.style.top = e.pageY + 'px';
+            cursor1.style.left = e.pageX + 'px';
+            cursor2.style.top = e.pageY + 'px';
+            cursor2.style.left = e.pageX + 'px';
+        }
+
+        document.querySelectorAll('a').forEach(links =>{
+
+            links.onmouseenter = () => {
+                cursor1.classList.add('active');
+                cursor2.classList.add('active');
+            }
+
+            links.onmouseleave = () => {
+                cursor1.classList.remove('active');
+                cursor2.classList.remove('active');
+            }
+
+        });
 
     </script>
 
