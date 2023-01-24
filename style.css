@@ -47,6 +47,8 @@ header {
     text-align: center;
 }
 
+
+
 header .logo {
     text-transform: uppercase;
     color: #fff;
@@ -246,6 +248,10 @@ header .follow a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+}
+
+.home a {
+    color: var(--main-color);
 }
 
 .home .image {
