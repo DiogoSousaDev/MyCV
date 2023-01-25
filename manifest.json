@@ -1,11 +1,13 @@
 {
     "name": "Diogo Sousa - Curriculo",
     "short_name": "CV",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
+    "background_color": "#e38528",
+    "theme_color": "#fcf2e8",
     "icons": [
         {
-            "src": "img/pwa.png",
+            "src": "./img/pwa.png",
             "sizes": "512x512",
             "type": "image/png"
         }
