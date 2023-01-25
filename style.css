@@ -174,7 +174,7 @@ header .follow a:hover {
     justify-content: center;
 }
 
-.foto_perfil {
+.perfil .foto_perfil {
     position: absolute;
     margin-top: 45px;
     width: 50%;
