@@ -168,6 +168,19 @@ header .follow a:hover {
     color: #666;
 }
 
+.perfil {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.foto_perfil {
+    position: absolute;
+    margin-top: 45px;
+    width: 50%;
+    border-radius: 50%;
+}
+
 
 
 /* media queries */
