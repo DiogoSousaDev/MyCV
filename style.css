@@ -177,6 +177,9 @@ header .follow a:hover {
     list-style: none;
     font-size: 1.3rem;
     text-align: start;
+}
+
+.perfil .contactos a {
     color: white;
 }
 
