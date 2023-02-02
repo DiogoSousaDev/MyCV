@@ -228,7 +228,7 @@ header .follow a:hover {
     html {
         font-size: 50%;
     }
-
+    
     header {
         width: 100%;
         padding: 5rem 2rem;
@@ -255,6 +255,10 @@ header .follow a:hover {
 
     .perfil .foto_perfil img {
         width: 25%;
+    }
+
+    .perfil .btn {
+        font-size: 2rem;
     }
 }
 
@@ -348,10 +352,11 @@ header .follow a:hover {
 .btn {
     display: inline-block;
     margin-top: 1rem;
-    padding: .8rem 3rem;
+    padding: 0.6rem 1rem;
     background-color: var(--main-color);
-    color: #fff;
-    font-size: 1.7rem;
+    color: #FFF;
+    font-size: 1.4rem;
+    border-radius: 5px;
 }
 
 .btn:hover {
